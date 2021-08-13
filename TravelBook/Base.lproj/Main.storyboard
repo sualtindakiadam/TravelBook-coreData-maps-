@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cK9-1v-N30">
-                                <rect key="frame" x="0.0" y="247" width="414" height="615"/>
+                                <rect key="frame" x="0.0" y="247" width="414" height="562"/>
                             </mapView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-HB-Vxm">
                                 <rect key="frame" x="20" y="104" width="374" height="34"/>
@@ -29,20 +29,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdd-BG-YlA">
+                                <rect key="frame" x="190" y="817" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyn-m2-gmh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="trailing" secondItem="DCt-sH-5xR" secondAttribute="trailing" id="0JS-DQ-Q3x"/>
-                            <constraint firstItem="DCt-sH-5xR" firstAttribute="centerX" secondItem="cK9-1v-N30" secondAttribute="centerX" id="BAZ-c5-DIE"/>
-                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Clw-2c-RFi"/>
-                            <constraint firstItem="cK9-1v-N30" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NRX-1E-WqO"/>
-                            <constraint firstItem="cK9-1v-N30" firstAttribute="top" secondItem="DCt-sH-5xR" secondAttribute="bottom" constant="50" id="Wwi-YZ-zdh"/>
-                            <constraint firstItem="cK9-1v-N30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fJa-1m-eaj"/>
-                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="h3Q-NJ-fo9"/>
-                            <constraint firstItem="DCt-sH-5xR" firstAttribute="top" secondItem="ov6-HB-Vxm" secondAttribute="bottom" constant="25" id="oex-2H-BCm"/>
-                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="pas-5C-8Vt"/>
-                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="leading" secondItem="DCt-sH-5xR" secondAttribute="leading" id="x4v-4r-Ze8"/>
+                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="leading" secondItem="DCt-sH-5xR" secondAttribute="leading" id="ClY-F6-Ej9"/>
+                            <constraint firstItem="DCt-sH-5xR" firstAttribute="top" secondItem="ov6-HB-Vxm" secondAttribute="bottom" constant="25" id="GAF-tb-KCY"/>
+                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IRZ-zV-CR3"/>
+                            <constraint firstItem="cK9-1v-N30" firstAttribute="centerX" secondItem="Qdd-BG-YlA" secondAttribute="centerX" id="OQd-0i-DW1"/>
+                            <constraint firstItem="DCt-sH-5xR" firstAttribute="centerX" secondItem="cK9-1v-N30" secondAttribute="centerX" id="QTZ-yQ-VGQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qdd-BG-YlA" secondAttribute="bottom" constant="15" id="YCR-3y-Ooi"/>
+                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="trailing" secondItem="DCt-sH-5xR" secondAttribute="trailing" id="azR-vR-RRU"/>
+                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="c8c-1U-Inf"/>
+                            <constraint firstItem="Qdd-BG-YlA" firstAttribute="top" secondItem="cK9-1v-N30" secondAttribute="bottom" constant="8" id="cEd-CJ-TKJ"/>
+                            <constraint firstItem="ov6-HB-Vxm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="n0r-yv-Gbb"/>
+                            <constraint firstItem="cK9-1v-N30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tzn-lH-dzd"/>
+                            <constraint firstItem="cK9-1v-N30" firstAttribute="top" secondItem="DCt-sH-5xR" secondAttribute="bottom" constant="50" id="zjr-Pg-UVA"/>
                         </constraints>
                     </view>
                     <connections>
